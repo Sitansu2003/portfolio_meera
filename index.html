@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Guddi</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/3adf69d5b5.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Header Section -->
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/2.png" class="logo">
+                <ul>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-content">
+                <div class="header-text">
+                    <p>PGDM Graduate</p>
+                    <h1>Hi, I'm <span>Meera</span><br> Sahu From Bengaluru</h1>
+                </div>
+                <div class="hd-image">
+                    <img src="images/guddi_ai_image.png" alt="Meera">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/guddi2.jpg" alt="No image" class="img">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I’m Meera Sahu — a finance and Analytics enthusiast currently pursuing my PGDM at ISBR Business School, with a focus on Corporate Finance and Business Analytics. With a strong academic background in commerce and hands-on experience through industry simulations and projects, I thrive at the intersection of numbers, strategy, and innovation.<br> From analyzing global markets with Bloomberg to exploring competitive strategies in the food & beverage sector, I’ve cultivated a sharp eye for financial insights and business dynamics. I enjoy turning data into direction and ideas into action — whether through strategic planning, financial modeling, or digital transformation insights. <br>I’m driven by curiosity, motivated by challenges, and committed to growing in dynamic environments where finance meets forward-thinking.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-links" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Financial Analysis
+                            </span><br>Expertise in analyzing financial data to assess business performance and guide decision-making.</li>
+                            <li><span>Investment Planning
+                            </span><br>Skilled in developing tailored investment strategies to maximize returns while minimizing risk.</li>
+                            <li><span>
+                                Portfolio Management
+                                </span><br> Proficient in managing diverse portfolios to optimize growth and mitigate potential losses.</li>
+                            <li><span>Budgeting and Forecasting
+                            </span><br>Experienced in creating accurate budgets and financial forecasts to guide organizational planning.
+                        </li>
+                            <li><span>Financial Reporting</span><br>Capable of preparing clear, concise, and compliant financial reports for stakeholders.</li>
+                            <li><span>Risk Assessment
+                            </span><br>Expertise in identifying and assessing financial risks to ensure business sustainability.</li>
+                            <li><span>Cost Management</span><br> Proficient in controlling costs through effective budgeting and financial strategies.</li>
+                            <li><span>Ratio Analysis
+                            </span><br>Adept at using financial ratios to evaluate a company's performance and financial health.</li>
+                            <li><span>Wealth Management</span><br>Skilled in providing comprehensive wealth management strategies for high net-worth individuals.</li>
+                            <li><span>Business Evaluation & Innovation Strategies</span><br> Focused on assessing business performance and implementing innovative strategies to drive growth.</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Jan 2025 – March 2025
+                            </span><br>Marketing and Finance Intern
+                            AIM India Pvt. Ltd. | New Delhi/Remote.
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>JUNE 2024-2026
+                            </span><br>International School of
+                            Business and Research
+                            PGDM in Finance and Business
+                            analytics.</li>
+                            <li><span>2020-2023
+                            </span><br>Sashi Bhusan Rath Government Autonomous Women's College 
+                            (Berhampur University).
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+     <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1>Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>meerasahu2310@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i>+91-7077926651</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/meera-sahu2309?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="images/Meera cv.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Enter your name" required>
+                        <input type="email" name="Email" placeholder="Enter your mail" required>
+                        <textarea name="Message" rows="6"
+                        placeholder="Enter your message" id=""></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        
+     </div>
+
+    
+
+    <script src="app.js"></script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxWbS-BDty5j93z-KkQZgfl1kMCW8QaiDpv-EOijyPGfM7-EeXnpMiH2yBLeo3X9iPB/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById('msg')
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = 'Message sent successfully!'
+                setTimeout(function(){
+                    msg.innerHTML = ''
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+            })
+</script>
+      </script>
+</body>
+</html>
