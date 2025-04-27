@@ -149,7 +149,6 @@ nav ul li a:hover::after{
     color: #fff;
     margin-top: auto;
     padding: 10px;
-    /* margin-bottom: 320px; */
 }
 .about-col-2 p {
     margin-top: 10px;
@@ -194,6 +193,59 @@ nav ul li a:hover::after{
 }
 .tab-contents.active-tab{
     display: block;
+}
+
+/* My Achievments Section */
+
+#achievments h1{
+    font-size: 45px;
+    padding: 10px;
+}
+.slider {
+    position: relative;
+    max-width: 11git 00px;
+    margin: 40px auto;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #ff004f;
+  }
+  
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+  
+.slides img {
+    width: 100%;
+    height: 450px;
+    border-radius: 10px;
+}
+  
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 30px;
+    color: #fff;
+    background-color: rgba(0,0,0,0.5);
+    border: none;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    user-select: none;
+    z-index: 1;
+}
+  
+.prev {
+    left: 20px;
+}
+  
+.next {
+    right: 20px;
+}
+  
+.prev:hover, .next:hover {
+    background-color: #ff004f;
 }
 
 /* Contact Section */
@@ -377,6 +429,21 @@ form .btn2{
         padding: 12px 30px;
         font-size: 16px;
     }
+
+    .slider {
+        max-width: 95%;
+        margin: 20px auto;
+      }
+    
+      .slides img {
+        height: 200px;
+      }
+    
+      .prev, .next {
+        font-size: 20px;
+        padding: 6px;
+        top: 45%;
+      } 
 }
 
 /* Success Message Style */
