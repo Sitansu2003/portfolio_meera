@@ -26,6 +26,11 @@ body{
     flex-wrap: wrap;
     gap: 20px;
 }
+.header-text p {
+    font-size: 24px; 
+    margin-top: 200px; 
+    color: #ffffff; 
+}
 
 .header-text {
     flex-basis: 60%;
@@ -81,9 +86,9 @@ nav ul li a:hover::after{
     margin-top: 30px;
     font-size: 30px;
 }
-.header-text h1{
+.header-text h1 {
     font-size: 60px;
-    margin-top: 200px;
+    margin-top: 20px;
 }
 .header-text h1 span{
     color: #ff004f;
